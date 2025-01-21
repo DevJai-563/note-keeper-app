@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Keeper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Note Keeper App</h1>
+
+        <div class="form-group">
+            <input id="title" type="text" placeholder="Title of your note">
+            <input id="note" type="text" placeholder="Enter your note here">
+            <button id="submit" class="btn">Save Note</button>
+        </div>
+
+        <div class="form-group">
+            <input id="delTitle" type="text" placeholder="Title of the note to delete">
+            <button id="delete" class="btn">Delete Note</button>
+        </div>
+
+        <div class="form-group">
+            <button id="clear" class="btn clear-btn">Clear All Notes</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button id="viewNotes" class="btn view-btn">View All Notes</button>
+    </div>
+    <p id="notesDisplay" class="notes-display"></p>
+
+    <div class="containerPG">
+        <h2>Random password Generator</h2>
+        <div class="display">
+            <input type="text" id="password" placeholder="password" readonly>
+            <img src="image/copy.png" onclick="copyPassword()">
+        </div>
+        <button onclick="gneratePass()">Gnerate Password</button>
+    </div>
+
+
+    <footer class="footer">
+        <div id="weatherReport" class="weather-report">
+            Fetch weather report...
+            
+            <input id="cityName" type="text" placeholder="Enter city name">
+            <button onclick="fetchWeather()">Submit</button>
+        </div>
+        <div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

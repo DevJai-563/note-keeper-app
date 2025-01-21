@@ -1,0 +1,77 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container styling */
+.containerPG {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.containerPG h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Display section (input and icon) */
+.display {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input#password {
+    width: 90%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+input#password:focus {
+    border-color: #3f8efc;
+}
+
+.containerPG img {
+    position: absolute;
+    right: 17px;
+    top: 41%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.containerPG img:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+/* Button styling */
+.containerPG button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #3f8efc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.containerPG button:hover {
+    background-color: #3178d8;
+}
